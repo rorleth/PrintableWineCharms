@@ -1,20 +1,29 @@
 // parameters for the charm
+// Name to go on the charm
 name = "Snoopy";
+// font size
 fontSize = 8;
+// font name
 font = "Ravie";
-
+// how high the font is elevated over the baseplate
 fontLayerDepth = 1;
+// how thick to make the plate that the name is printed on
 bottomPlateThickness = 2;
+// margin between font and outer edge of plate
 textMargin = 2;
 
 // want a raised border ? That's how you get a border
 borderThickness = 1;
+
 // height of said border - modify if you want a border that stands out higher than the font
 borderHeight = bottomPlateThickness + fontLayerDepth; 
 
 // parameters for the wine glass they're supposed to fit on
+// radius of the attachment ring
 innerRadius = 6;
+// how thick to make the ring
 ringThickness = 2;
+// how big is the opening - that needs to be just a little smaller than your glass' stem
 stemThickness = 8;
 
 // normalize nameplate to that size in order to get a fixed height regardless of characters used in font
