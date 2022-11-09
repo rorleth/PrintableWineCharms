@@ -1,11 +1,16 @@
 // parameters for the charm
 name = "Snoopy";
 fontSize = 8;
-font = "Lucida Handwriting:style=Italic";
+font = "Ravie";
 
 fontLayerDepth = 1;
 bottomPlateThickness = 2;
 textMargin = 2;
+
+// want a raised border ? That's how you get a border
+borderThickness = 1;
+// height of said border - modify if you want a border that stands out higher than the font
+borderHeight = bottomPlateThickness + fontLayerDepth; 
 
 // parameters for the wine glass they're supposed to fit on
 innerRadius = 6;
@@ -66,6 +71,17 @@ module text_area(output) {
 // plate to write the name on
 linear_extrude( height = bottomPlateThickness )
     text_area(name);
+
+if (borderThickness > 0)
+{
+    linear_extrude( height = borderHeight )
+        difference()
+        {
+            offset (delta = borderThickness)
+                text_area(name);
+            text_area(name);
+        }
+}
 
 // write the name
 translate([0, 0,bottomPlateThickness]) 
