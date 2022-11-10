@@ -1,10 +1,10 @@
 // parameters for the charm
 // Name to go on the charm
-name = "Snoopy";
+name = "Maria";
 // font size
 fontSize = 8;
 // font name
-font = "Ravie";
+font = "Broadway";
 // how high the font is elevated over the baseplate
 fontLayerDepth = 1;
 // how thick to make the plate that the name is printed on
@@ -102,7 +102,7 @@ translate([0, 0,bottomPlateThickness])
 cutCylRad = (innerRadius+ringThickness) * tan(asin(stemThickness/(2*innerRadius)));
 
 // add the glass attachment ring
-translate([0, bottomPlateHeight / 2 + innerRadius, 0])
+translate([0, bottomPlateHeight / 2 + innerRadius + borderThickness, 0])
 difference()
 {
     // the ring
