@@ -1,14 +1,14 @@
 // parameters for the charm
 // Name to go on the charm
-name = "Maria";
+name = "Sonya";
 // font size
 fontSize = 8;
 // font name
-font = "Broadway";
+font = "Impact";
 // how high the font is elevated over the baseplate
 fontLayerDepth = 1;
 // how thick to make the plate that the name is printed on
-bottomPlateThickness = 2;
+bottomPlateThickness = 1.6;
 // margin between font and outer edge of plate
 textMargin = 2;
 
