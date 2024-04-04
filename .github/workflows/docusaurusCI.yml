@@ -4,12 +4,11 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: 
-      NODE_VERSION=21
     steps:
       - uses: actions/checkout@master
       - uses: redkubes/docusaurus-deploy-action@v1
         with:
+          NODE_VERSION: 21
           source-folder: website
           git-user: rorleth
           git-password: ${{ secrets.GITHUB_TOKEN }}
