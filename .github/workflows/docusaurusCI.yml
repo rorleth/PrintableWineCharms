@@ -4,11 +4,10 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: 
+      NODE_VERSION=21
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '21'
       - uses: redkubes/docusaurus-deploy-action@v1
         with:
           source-folder: website
