@@ -59,9 +59,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Wine Charms',
+      title: 'Wine Charms Test Deployment 1',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'change this default logo',
         src: 'img/logo.svg',
       },
       items: [
