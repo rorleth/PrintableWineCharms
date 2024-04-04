@@ -6,13 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Set up Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '21'
       - uses: redkubes/docusaurus-deploy-action@v1
         with:
           source-folder: website
           git-user: rorleth
           git-password: ${{ secrets.GITHUB_TOKEN }}
           deployment-branch: gh-pages
+        env:
+          NODE_VERSION: 21
