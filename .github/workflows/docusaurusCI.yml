@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: redkubes/docusaurus-deploy-action@v1
+      -
+        name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          source-folder: website
-          git-user: rorleth
-          git-password: ${{ secrets.GITHUB_TOKEN }}
-          deployment-branch: gh-pages
+          target_branch: gh-pages
+          build_dir: website
         env:
-          NODE_VERSION: 21
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
