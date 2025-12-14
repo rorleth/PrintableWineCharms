@@ -54,26 +54,25 @@ module text_area(output) {
     resize([0,bottomPlateHeight,0], auto =[false, true, false])
     offset( delta = textMargin )
     projection()
-    intersection(){
-        translate( [0,0,-1] )
-        rotate([-90,0,0])
-        translate([0,0,-(3 * fontSize) / 2])
-        linear_extrude( height = 3 * fontSize )
-        hull()
-        projection()
-        rotate([90,0,0])
-        linear_extrude( height = 1)
-        write_name(output);
+    intersection() {
+        rotate([-90 , 0, 0])
+            translate([0,0,-(3 * fontSize) / 2])
+                linear_extrude( height = 3 * fontSize )
+                    hull()
+                        projection()
+                            rotate( [90, 0, 0] )
+                                linear_extrude(height = 1)
+                                    write_name(output);
 
 
         rotate( [0, -90, 0] )
-        translate( [0, 0, -estimated_length/2] )
-        linear_extrude( height = estimated_length )
-        hull()
-        projection()    
-        rotate( [0, 90, 0] )
-        linear_extrude( height = 1 )
-        write_name(output);
+            translate( [0, 0, -estimated_length/2] )
+                linear_extrude( height = estimated_length )
+                    hull()
+                        projection()    
+                            rotate( [0, 90, 0] )
+                                linear_extrude( height = 1 )
+                                    write_name(output);
     }
 }
 

@@ -1,0 +1,17 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "borderThickness": "0",
+            "bottomPlateThickness": "3",
+            "font": "Impact",
+            "fontLayerDepth": "1",
+            "fontSize": "10",
+            "innerRadius": "6",
+            "name": "Sonya",
+            "ringThickness": "2",
+            "stemThickness": "8",
+            "textMargin": "2"
+        }
+    }
+}
