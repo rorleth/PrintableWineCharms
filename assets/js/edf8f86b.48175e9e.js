@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2076],{7238:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/PrintableWineCharms/blog/tags/hola","allTagsPath":"/PrintableWineCharms/blog/tags","count":1,"unlisted":false}')}}]);
